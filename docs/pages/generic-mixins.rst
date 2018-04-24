@@ -25,7 +25,7 @@ The following view parameters are supported:
 
 For example::
 
-    from django_tables2 import SingleTableView
+    from django_tables2 import SingleTableMixin
 
 
     class Person(models.Model):
@@ -38,7 +38,7 @@ For example::
             model = Person
 
 
-    class PersonList(SingleTableView):
+    class PersonList(SingleTableMixin):
         model = Person
         table_class = PersonTable
 
